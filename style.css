@@ -298,14 +298,11 @@ margin: 10px;
 @media (max-width: 768px) {
 
 
-  body {
-    background: #151515 url('../images/bg.png') no-repeat fixed left bottom;
-    background-size: cover;
+  body {  
     background-position: center;
     color: #fff;
     text-align: center;
     font-size: 1.3rem;
-    font-family: 'Noto Sans', sans-serif;
     padding-top: 60px;
   }
   .site-title {
