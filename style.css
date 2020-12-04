@@ -299,6 +299,8 @@ margin: 10px;
 
 
   body {  
+    background: #151515 url('images/bg2.png') no-repeat fixed left bottom;
+    background-size: cover;
     background-position: center;
     color: #fff;
     text-align: center;
