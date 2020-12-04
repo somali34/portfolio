@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  background: #151515 url('../images/bg2.png') no-repeat fixed left bottom;
+  background: #151515 url('images/bg2.png') no-repeat fixed left bottom;
   background-size: cover;
   color: #fff;
   text-align: center;
