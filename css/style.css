@@ -1,0 +1,732 @@
+@charset "UTF-8";
+/* 文字コードの指定 */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+html {
+  font-size: 62.5%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column; 
+}
+
+body {
+  font-family: 'gill-sans-nova', 小塚　gothic　pr6n, sans-serif;
+  font-size: 1.6rem;
+  font-weight: 200;
+  font-style: normal;
+  line-height: 1.75;
+  color: #111;
+  background-color: #fafdff;
+  margin: 0;
+}
+
+p {
+  font-family: 小塚 Gothic Pr6N ;
+  font-size: 1.4rem;
+  font-weight: lighter;
+  color: #333;
+}
+
+a {
+  color: #111;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+ul  {
+  list-style-type: none;
+}
+
+/* アニメーション
+-------------------------------------------------*/
+
+/*スクロールリンクの形状*/
+.scroll-top {
+	/*表示位置*/
+	position: fixed;
+	right: 20px;
+	bottom: 10px;
+	z-index: 2;
+	/*はじめは非表示*/
+	opacity: 0;
+	visibility: hidden; 
+	transition: opacity .5s, visibility .5s; /*それぞれに0.5秒の変化のアニメーション*/
+	/*縦書き*/
+	-webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+	/*改行禁止*/
+    white-space: nowrap;
+	/*矢印の動き*/
+	animation: arrowmove 1s ease-in-out infinite;
+}
+
+@keyframes arrowmove{
+      0%{bottom:20px;}
+      50%{bottom:25px;}
+     100%{bottom:20px;}
+ }
+
+
+/*.scroll-viewクラスがついたら出現*/
+.scroll-top.scroll-view {
+	opacity: 1;
+	visibility: visible;
+}
+
+/*リンク全体の aタグの形状*/
+.scroll-top a {
+	text-decoration: none;
+	color: #666;
+	text-transform: uppercase;
+	font-size:2rem;
+    display: block;
+}
+
+/*スクロールリンクの形状*/
+
+.js-scroll a::after{
+	content:"";
+	position: absolute;
+	top:0;
+	right:0;
+	width:1px;
+	height: 50px;
+	background:#666;
+}
+
+.js-scroll a::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    right: -6px;
+    width: 1px;
+    height: 20px;
+    background: #666;
+    transform: skewX(-31deg);
+}
+
+/*Edge IE11 hack*/
+_:-ms-lang(x), .js-scroll a::before{
+	right:-11px;
+}
+
+/*ページトップリンクの形状*/
+
+.js-pagetop a::after{
+	content:"";
+	position: absolute;
+	top:0;
+	right:0;
+	width:1px;
+	height: 50px;
+	background:#666;
+}
+
+.js-pagetop a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -6px;
+    width: 1px;
+    height: 20px;
+    background: #666;
+    transform: skewX(31deg);
+}
+
+/*Edge IE11 hack*/
+_:-ms-lang(x), .js-pagetop a::before{
+	right:0;
+}
+
+
+
+
+
+
+
+/*  ヘッダー 
+-------------------------------------------------*/
+.big-bg {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#home {
+  background-image: url(../images/PC-TOP.jpg);
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+
+.header {
+  height: 6rem;
+  background-color: #fafdff;
+  background: rgba(255, 255, 255, 0.3);
+  margin: 0;
+  padding: 10px 0;
+}
+
+/* ヘッダースクロール
+-------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+.main-nav {
+  display: flex; 
+  justify-content: center;
+  list-style-type: none;
+  margin: 0 0 50px 0;
+}
+
+.main-nav a {
+  display: block;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: #333;
+}
+
+.main-nav li {
+  font-size: 3rem;
+  font-weight: lighter;
+  margin-bottom: 20px;
+}
+
+.main-nav li a {
+  position: relative;
+}
+
+.main-nav li.current a,
+.main-nav li a:hover {
+  color: #cb4ecd;
+}
+
+.main-nav li a::after {
+  content:  '';
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  width: 80%;
+  height: 2px;
+  background: #cb4ecd;
+  transition: all .3s;
+  transform: scale(0.1);
+  transform-origin: center top;
+}
+
+.main-nav li.current a::after,
+.main-nav li a:hover::after {
+  transform: scale(1,1);
+}
+
+h1 {
+  font-family: 'Dancing Script', 小塚 Gothic Pr6N R , sans-serif;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: left;
+  font-size: 7.2rem;
+  font-weight: 100;
+  margin-top: 20%;
+  margin-left: 20%;
+  margin-bottom: 0;
+  line-height: normal;
+  
+}
+
+h2 {
+  margin: 0;
+  padding: 60px 0;
+  text-align: center;
+  font-weight: lighter;
+  font-size: 3.6rem;
+}
+
+.head::before,
+.head::after {
+  content: '';
+  display: inline-block;
+  width: 30%;
+  height: 1px;
+  margin: 0 30px;
+  background-color: #555;
+  vertical-align: middle;
+}
+h3 {
+  font-size: 3.2rem;
+  font-family: 'gill-sans-nova', 小塚　gothic　pr6n, sans-serif;
+  font-weight: lighter;
+  text-align: center;
+  margin: 0;
+
+}
+
+
+/*  プロフィール
+------------------------------------------------- */
+
+#profile { 
+  background-image: linear-gradient( #e6c0c0,  #fafdff);
+  
+}
+
+.prof-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 20%;
+  position: relative;
+}
+
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.text-container {
+  width: 70%;
+  height: auto;  
+}
+
+.profile p {
+  font-family: 小塚 Gothic Pr6N ;
+  font-size: 1.4rem;
+  font-weight: 100;
+}
+
+.word {
+ font-weight: bold;
+}
+
+
+.prof-img {
+  position: absolute;
+  top: 30px;
+  left: 260px;
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+}
+
+
+.sns-icon {
+  display: flex;
+  margin: 0;
+  padding-top: 20px;
+  align-items: flex-end;
+  
+
+}
+
+ul.sns-icon li {
+  display: inline-flex;
+  justify-content: space-around;
+  margin-right: 20px;
+  align-items: baseline;
+}
+
+
+
+ul.sns-icon a:hover {
+  background-color: #fff;
+}
+
+.shine span.mask{
+	position: relative;/*キラッの基点となる位置を定義*/
+    display: block;
+    line-height: 0;/*行の高さを0にする*/
+    overflow: hidden;/*拡大してはみ出る要素を隠す*/
+}
+
+.shine span.mask::before {
+	position: absolute;
+	content:"";
+	width: 50%;/*キラッの横幅*/
+	height: 100%;/*キラッの縦幅*/
+	top: 0;/*.shine span.maskのトップ0を基点*/
+	left: -75%;/*画面の見えていない左から右へ移動するスタート地点*/
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	transform: skewX(-25deg);/*背景白透過を斜めに*/
+}
+
+.shine span.mask:hover::before {/*hoverした時の変化*/
+	animation: shine 0.7s;/*アニメーションの名前と速度を定義*/
+}
+
+@keyframes shine {
+	100% {
+		left: 125%;/*画面の見えていない左から右へ移動する終了地点*/
+	}
+}
+
+
+/* スキルス 
+-------------------------------------------------*/
+
+#skills {
+  background-color: #fafdff;
+  
+  
+}
+
+.skills-grid img {
+  width: 50px;
+  height: 50px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding: 0 200px 50px 200px;
+  
+  
+}
+.skills-grid p {
+  margin: 0;
+  padding-right: 30px;
+}
+
+.skills-grid h3 {
+  text-align: justify;
+  padding-left: 20%;
+  margin-bottom: 10px;
+}
+
+.skill-box {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  
+  
+}
+
+/* その他のツール 
+------------------------------------------------- */
+.other-tools  {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0;
+  
+}
+
+.tool-container {
+  padding-left: 20%;
+
+}
+
+.tool-container  h3 {
+  margin-bottom: 10px;
+  text-align: left;
+}
+.other-tools div {
+  width: 100px;
+}
+.other-tools img {
+  width: 50px;
+  height: 50px;
+  margin: 20px 0;
+  margin: 0;
+  
+}
+ .item1 img {
+   width: 50px;
+   height: 60px;
+ } 
+
+
+
+/* ワークス 
+------------------------------------------------- */
+
+#works {
+  background-image: linear-gradient(#fafdff,#e6c0c0);
+ padding-bottom: 30px;
+}
+ #works h2 {
+   padding-bottom: 0;
+ }
+ .works-wrapper p {
+   font-size: 1.2rem;
+ }
+.sub {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 0;
+  padding-bottom: 60px;
+}
+
+.works-wrapper { 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 60px;
+  margin: 0;
+  padding: 0 10%; 
+}
+
+.works img {
+  width: 300px;
+  height: 300px; 
+  
+}
+
+.work-box img{
+	opacity:1;
+	transition: .3s ease-in-out;/*移り変わる速さを変更したい場合はこの数値を変更*/
+}
+
+.work-box a:hover img{/*hoverした時の変化*/
+	opacity:0.8;/*透過具合を変更したい場合はこの数値を変更*/
+}
+
+.work-box {
+  width: 100%;
+  height: auto;
+}
+
+ .works-title {
+   font-size: 1.8rem;
+   font-weight: 400;
+ }
+
+ .work-text {
+   text-align: center;
+ }
+/* アザー 
+-------------------------------------------------*/
+
+#other {
+  background-image: linear-gradient(#e6c0c0, #fafdff);
+}
+.other-sub {
+  font-family: 小塚 Gothic Pr6N;
+  text-align: center;
+  color: #333;
+  font-size: 2.4rem;
+  font-weight: 100;
+  margin-top: 0;
+}
+
+ .list {
+   padding-left: 27%;
+   font-size: 2.4rem;
+ }
+
+ .other-box {
+   display: flex;
+   padding: 0 22% 40px;
+ }
+  .other-text {
+    padding: 0 30% 60px;
+  } 
+　
+  .other-grid {
+    padding: 30%;
+  }
+
+  .other-grid img {
+    width: 50px;
+    height: 50px;
+    padding: 10px 30px 10px 10px;
+  }
+
+  .other-grid h3 {
+  text-align: justify;
+  padding-left: 30%;
+  font-size: 2.4rem;
+  color: #333;
+  
+}
+  
+/* ギャラリー
+-------------------------------------------------*/
+
+
+#gallery-header {
+  background-color: #fafdff;
+  padding-bottom: 60px;
+}
+
+.gallery-line {
+  position: relative;
+  padding-bottom: 60px;
+}
+ 
+
+ .gallery-line img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%,-30%);
+  margin: 0;
+  padding: 0 0 60px;
+  opacity: 0.8;
+  
+ }
+ .click {
+   text-align: center;
+ }
+
+ /*==================================================
+ギャラリーのためのcss
+===================================*/
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+  padding:0 10%;/*ギャラリー左右に余白をつける*/
+  margin:0;
+  }
+  
+  .gallery li {
+      margin-bottom: 20px;/*各画像下に余白をつける*/
+      list-style:none;
+  }
+  
+  /*ギャラリー内のイメージは横幅100%にする*/
+  .gallery img{
+    width:100%;
+    height:auto;
+    vertical-align: bottom;/*画像の下にできる余白を削除*/
+
+   
+  }
+  
+  /*　横幅900px以下の段組み設定　*/
+  @media only screen and (max-width: 900px) {
+    .gallery{
+      display: grid;
+      grid-template-columns: 1fr;
+      
+    }	
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .gallery{
+      display: grid;
+      grid-template-columns: 1fr;
+    }	
+  }
+
+  /*　キラッ　*/
+
+.shine span.mask{
+	position: relative;/*キラッの基点となる位置を定義*/
+    display: block;
+    line-height: 0;/*行の高さを0にする*/
+    overflow: hidden;/*拡大してはみ出る要素を隠す*/
+}
+
+.shine span.mask::before {
+	position: absolute;
+	content:"";
+	width: 50%;/*キラッの横幅*/
+	height: 100%;/*キラッの縦幅*/
+	top: 0;/*.shine span.maskのトップ0を基点*/
+	left: -75%;/*画面の見えていない左から右へ移動するスタート地点*/
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	transform: skewX(-25deg);/*背景白透過を斜めに*/
+}
+
+.shine span.mask:hover::before {/*hoverした時の変化*/
+	animation: shine 0.7s;/*アニメーションの名前と速度を定義*/
+}
+
+@keyframes shine {
+	100% {
+		left: 125%;/*画面の見えていない左から右へ移動する終了地点*/
+	}
+}
+
+
+
+/* コンタクト
+------------------------------------------------- */
+
+#contact {
+  
+  background-color: #fafdff;
+  background-size: cover;
+  background-image: url(../images/thank.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.contact-form {
+  width: 50%;
+  margin: 50px auto 0;
+}
+
+.contact-form input[type=text],
+.contact-form input[type=email],
+.contact-form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 15px;
+  outline: none;
+  border: 1px solid #555;
+  border-radius: 0;
+  background-color: #fafdff;
+  color: #111;
+}
+
+.contact-form textarea {
+  height: 150px;
+}
+
+.contact-form input[type=submit] {
+  display: block;
+  width: 200px;
+  margin: 40px auto 0;
+  padding: 15px;
+  border: 1px solid #555555;
+  border-radius: 10px;
+  background-color: transparent;
+  color: #111;
+  cursor: pointer;
+}
+
+.contact-form input[type=submit]:hover {
+  background-color: #cb4ecd;
+
+}
+
+
+
+/* フッター　
+-------------------------------------------------*/
+
+.footer {
+background-color: #0f1626;
+text-align: center;
+padding: 10px 0;
+margin-top: auto;
+align-items: baseline;
+
+width: 100%;
+height: auto;
+}
+
+.footer p {
+  color: #fafdff;
+  align-items: center;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
