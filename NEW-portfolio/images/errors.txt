@@ -1,0 +1,29 @@
+[2021-3-18 23:52:07] layer "yellowline.png": Duplicate path: yellowline.png
+[2021-3-18 23:52:07] layer "sns.icon": Unsupported extension: icon
+[2021-3-18 23:52:07] layer "twitter.icon": Unsupported extension: icon
+[2021-3-18 23:52:07] layer "insta.icon": Unsupported extension: icon
+[2021-3-18 23:52:07] layer "sns.icon": Unsupported extension: icon
+[2021-3-18 23:52:07] layer " スキル.bg": Unsupported extension: bg
+[2021-3-18 23:52:07] layer "h2.SKILLS": Unsupported extension: skills
+[2021-3-18 23:52:07] layer "skills.icon": Unsupported extension: icon
+[2021-3-18 23:52:07] layer "chatwork.png": Duplicate path: chatwork.png
+[2021-3-18 23:52:07] layer "slack.png": Duplicate path: slack.png
+[2021-3-18 23:52:07] layer "skills.icon": Unsupported extension: icon
+[2021-3-18 23:52:07] layer "prof.icon": Unsupported extension: icon
+[2021-3-18 23:52:07] layer "h2.PROFILE": Unsupported extension: profile
+[2021-3-18 23:52:07] layer "SS.jpg": Duplicate path: SS.jpg
+[2021-3-18 23:52:07] layer "SSspan.jpg": Duplicate path: SSspan.jpg
+[2021-3-18 23:52:07] layer "glass.jpg": Duplicate path: glass.jpg
+[2021-3-18 23:52:07] layer "paisley.jpg": Duplicate path: paisley.jpg
+[2021-3-18 23:52:07] layer "black.jpg": Duplicate path: black.jpg
+[2021-3-18 23:52:07] layer "shelf.jpg": Duplicate path: shelf.jpg
+[2021-3-18 23:52:07] layer "sk.jpg": Duplicate path: sk.jpg
+[2021-3-18 23:52:07] layer "top.png": Duplicate path: top.png
+[2021-3-18 23:52:07] layer "contact.BG": Unsupported extension: bg
+[2021-3-18 23:52:07] layer "contact.BG": Unsupported extension: bg
+[2021-3-18 23:52:07] layer " プロフィール.bg": Unsupported extension: bg
+[2021-3-18 23:52:07] layer "somali34.jpg": Duplicate path: somali34.jpg
+[2021-3-18 23:52:07] layer "conies.jpg": Duplicate path: conies.jpg
+[2021-3-18 23:52:07] layer "cat.jpg": Duplicate path: cat.jpg
+[2021-3-18 23:52:07] layer "thank.png": Duplicate path: thank.png
+[2021-3-18 23:52:07] layer "h2.PROFILE": Unsupported extension: profile
