@@ -230,7 +230,7 @@ _:-ms-lang(x), .js-pagetop a::before{
 }
 
 h1 {
-  font-family: 'Dancing Script', 小塚 Gothic Pr6N R , sans-serif;
+  font-family: 'Snell Roundhand', 'Dancing Script', 小塚 Gothic Pr6N R , sans-serif;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -796,7 +796,7 @@ footer {
 
   .phrases {
    position: absolute;
-   top: 50%;
+   top: 40%;
    left: 10%;
   }
 
