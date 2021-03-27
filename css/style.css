@@ -449,7 +449,6 @@ ul.sns-icon a:hover {
 ---------------------------------------------------------------------------------- */
 
 #works {
- 
   background-color: #fafdff;
   padding-bottom: 30px;
 }
@@ -467,11 +466,11 @@ ul.sns-icon a:hover {
 }
 
 .works-wrapper { 
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 60px;
+  display: flex;
+  justify-content: space-around;
+  
   margin: 0;
-  padding: 0 10%; 
+  padding: 0; 
 }
 
 .work-image {
@@ -492,13 +491,14 @@ ul.sns-icon a:hover {
 }
 
 .work-box {
-  width: 100%;
+  width: 300px;
   height: auto;
 }
 
  .works-title {
    font-size: 1.8rem;
    font-weight: 400;
+   text-align: center;
  }
 
  .work-text {
@@ -582,7 +582,7 @@ ul.sns-icon a:hover {
  }
  .click {
    text-align: center;
-   padding: 10px;
+   padding: 15px ;
  }
 
  /*==================================================
@@ -1014,6 +1014,10 @@ padding: 0 30px;
  .tool-container {
    padding: 0 20px 60px;
  }
+
+
+
+
 /* SPワークス
 ------------------------------------------------------------------*/
 
@@ -1021,15 +1025,16 @@ padding: 0 30px;
 .works-wrapper { 
   position: relative;
   display: block;
+  align-items: center;
 }
 
 .sub {
-  padding: 10px 30px 60px;
+  padding: 0 10%;
   font-size: 1.2rem;
 }
 
  .work-box {
-   margin-bottom: 80px;
+   margin: 60px 10%;
  }
 
  /*  SPアザー
@@ -1048,11 +1053,12 @@ padding: 0 30px;
    padding: 0 10%;
  }
 .other-box {
-  padding: 0 20px;
+  padding: 0 10%;
 }
 
 .other-grid h3 {
   font-size: 1.6rem;
+  padding-left: 31%;
 }
 
 .other-box img {
@@ -1065,6 +1071,8 @@ padding: 0 30px;
     padding: 20px;
  }
   
+
+
 /*SP-コンタクト
 -----------------------------------------------------------*/
  #contact .sns-sub {
