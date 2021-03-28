@@ -231,8 +231,8 @@ _:-ms-lang(x), .js-pagetop a::before{
 
 h1 {
   font-family: 'Snell Roundhand', 'Dancing Script', 小塚 Gothic Pr6N R , sans-serif;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
+ /*-webkit-box-pack: center;
+      -ms-flex-pack: center;*/
           justify-content: center;
   text-align: left;
   font-size: 7.2rem;
@@ -389,7 +389,7 @@ ul.sns-icon a:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
-  padding: 0 200px 50px 20%;
+  padding: 0 20% 50px;
   
 }
 .skills-grid p {
@@ -466,19 +466,17 @@ ul.sns-icon a:hover {
 }
 
 .works-wrapper { 
+  justify-items: center;
   display: flex;
   justify-content: space-around;
-  
   margin: 0;
   padding: 0; 
 }
 
 .work-image {
-  width: 300px;
-  height: 300px; 
+  width: 100%;
+  height: auto; 
   border-radius: 20px;
-  
-  
 }
 
 .work-box img{
@@ -795,20 +793,16 @@ footer {
   }
 
   .phrases {
-   position: absolute;
-   top: 40%;
-   left: 10%;
+    padding-top: 250px;
   }
 
   .main-title   {
-  text-align: left;
-  align-items: center;
+  text-align: center;
   font-size: 2.6rem;
   font-weight: 100;
   margin: 0;
   line-height: normal;
   }
-	
 
    .sub-title {
      text-align: center;
@@ -826,7 +820,7 @@ footer {
   .header {
     height: 5rem;
     background-color: #fafdff;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0);
     margin: 0;
     padding: 10px 0;
   }
@@ -839,12 +833,12 @@ footer {
  /*SPナビゲーション*/
 .sp-nav {
     position: absolute;
-    top: 6rem;
+    top: 0;
     left: 0;
     display: none;
     z-index: 1000;
     width: 100%;
-    padding: 2rem;
+    padding: 6rem 2rem 2rem 2rem;
     font-size: 2.4rem;
     text-align: center;
     background-image: linear-gradient(#fafdff, #e6c0c0);
@@ -873,8 +867,8 @@ footer {
   width: 50px;
   height: 50px;
   border-radius: 5px;
-  margin: 0 0 0 310px;
-  z-index: 1000;
+  margin: 0 0 0 85%;
+  z-index: 1001;
 }
 
 /*ボタン内側*/
@@ -1013,9 +1007,12 @@ padding: 0 30px;
  }
   
  .tool-container {
-   padding: 0 20px 60px;
+   padding: 0 20px 30px;
  }
-
+ .tool-container h3 {
+   padding: 0 0 0 20px;
+   margin: 0;
+ }
 
 
 
@@ -1024,18 +1021,26 @@ padding: 0 30px;
 
 
 .works-wrapper { 
-  position: relative;
+  max-width: 100%;
   display: block;
-  align-items: center;
+  justify-items: center;
+  margin: 0;
+  padding: 0;
+
 }
 
 .sub {
   padding: 0 10%;
   font-size: 1.2rem;
 }
-
+ 
  .work-box {
-   margin: 60px 10%;
+   width: 80%;
+   justify-items: center;
+   padding: 60px 10%;
+   margin: 0;
+   
+   
  }
 
  /*  SPアザー
@@ -1086,7 +1091,6 @@ padding: 0 30px;
  ul.contact-icon {
   margin: 30px;
   padding: 0;
-  
   text-align: center;
   
 }
