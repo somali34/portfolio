@@ -45,6 +45,28 @@ ul  {
 /* アニメーション
 ----------------------------------------------------------------------------*/
 
+
+
+html,body{
+	height: 100%;/*高さを100%にして描画エリアをとる*/
+}
+
+#particles-js{ 
+	position:fixed;/*描画固定*/
+	z-index:5;/*描画を一番下に*/
+	width: 100%;
+	height: 100%;
+	/*background-color:#35004D;/*背景色*/
+}
+
+#s-wrapper{
+	position: relative;/*描画を#particles-jsよりも上にするためposition:relative;を指定*/
+	z-index: 2;/*z-indexの数字を大きくすることで描画を#particles-jsよりも上に*/
+	width:100%;
+	height: 100%;
+}
+
+
 /*スクロールリンクの形状*/
 .scroll-top {
 	/*表示位置*/
